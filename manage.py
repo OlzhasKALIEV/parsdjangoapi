@@ -3,6 +3,8 @@
 import os
 import sys
 
+from parsapi.utils import get_json_from_api
+
 
 def main():
     """Run administrative tasks."""
@@ -20,3 +22,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    get_json_from_api()
