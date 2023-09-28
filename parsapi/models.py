@@ -9,4 +9,4 @@ class CatalogPatrioticMusic(models.Model):
     creationyear = models.CharField(max_length=200)
 
     def __str__(self):
-        return f"{self.fullname} - {self.creationyear}"
+        return f"{self.fullname} *** {self.composer} *** {self.genre} *** {self.theme} *** {self.creationyear}"
