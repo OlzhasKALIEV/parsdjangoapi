@@ -27,3 +27,15 @@ ID(скрин)
 
 ![img_2.png](media/img_2.png)
 
+PUT: http://127.0.0.1:8000/api/v1/patriotic-music?id=1  изменить информацию Каталога патриотической музыки по
+ID
+
+Формат отправки изменений JSON 
+{
+    "fullname": "fullname",
+    "composer": "composer"
+}
+
+DELETE: http://127.0.0.1:8000/api/v1/patriotic-music?id=1  удаление информации Каталога патриотической музыки по
+ID
+
