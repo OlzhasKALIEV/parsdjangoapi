@@ -3,6 +3,15 @@
 Парсер сервиса https://opendata.mkrf.ru/opendata на Python, который сохранит данные из
 таблицы https://opendata.mkrf.ru/opendata/7705851331-patriot_music в базу данных.
 
+1. Необходимо клонировать репозиторий на локальный ПК, команда "git clone <наименование репозитория>"
+
+2. Установка зависимостей pip install -r .\requirements.txt
+
+3. Запуск миграций python manage.py migrate
+
+4. Запуск сервера python .\manage.py runserver
+
+
 HTTP метод всех запросов: GET, POST, PUT DELETE
 Формат ответов: JSON
 
@@ -39,3 +48,12 @@ ID
 DELETE: http://127.0.0.1:8000/api/v1/patriotic-music?id=1  удаление информации Каталога патриотической музыки по
 ID
 
+Поиск информации в Каталоге патриотической музыки по композитору и жанру. 
+
+GET: http://127.0.0.1:8000/api/v1/patriotic-music/music?composer=<ФИО_композитора> (скрин)
+
+![img_3.png](media/img_3.png)
+
+GET: http://127.0.0.1:8000/api/v1/patriotic-music/music?genre=<название_жанра> (скрин)
+
+![img_4.png](media/img_4.png)
